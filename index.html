@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <div id="todoList" class="bg_color d_flex align_center justify_center">
+        <div class="container">
+            <h1>Todo List</h1>
+            <div class="d_flex mb_2">
+                <input type="text" placeholder="Add a new task..." class="input_block mr_2">
+                <button class="btn_add d_flex align_center">
+                    <span class="material-icons">add_circle_outline</span>
+                    <span>ADD</span>
+                </button>
+            </div>
+
+            <!-- List -->
+            <ul class="list_wrapper mb_2">
+                <li>
+                    <p class="list_msg">- 目前尚無任務 -</p>
+                </li>
+            </ul>
+            
+            <div class="action_wrapper d_flex justify_between align_center">
+                <p>還有<span class="task_num mx_1">0</span>筆任務</p>
+                <button class="btn_clean d_flex align_center">
+                    <span class="material-icons mr_1">remove_circle_outline</span>
+                    <span>Clean All</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
