@@ -19,8 +19,8 @@ function render() {
               item.id
             }"  ${item.completed ? "checked" : ""}>
             <label>${item.taskTitle}</label>
-            <button class="btn_delete" data-id="${item.id}">
-                <span class="material-icons">remove_circle_outline</span>
+            <button class="btn_delete">
+                <span data-id="${item.id}" class="material-icons">remove_circle_outline</span>
             </button>
         </li>`;
   });
@@ -70,6 +70,7 @@ function removeTask(e) {
   todoData.forEach((item, key) => {
       if (parseInt(e.target.dataset.id) == item.id) {
           index = key;
+          // console.log(e.target);
       }
   });
 
