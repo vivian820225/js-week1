@@ -76,9 +76,6 @@ function removeTask(e) {
 
   todoData.splice(index, 1);
   render(todoData);
-  // 想法是用綁在 btn_delete 身上的 data-id 去判斷是否為同個 item，並取出該項目的 index 值
-  // 有去看作業提供的解答範例發現這塊跟原本想得差不多
-  // 但目前不知道自己哪邊誤解了，執行動作時都只刪除了第一項...
 }
 
 // 移除全部資料
